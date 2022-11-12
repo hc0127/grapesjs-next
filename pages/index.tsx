@@ -16,10 +16,9 @@ export default class Home extends React.Component {
   constructor(props:any){
     super(props);
     this.state = {
-      zIndex:1
+      editor:{},
     } as {
       editor?: any,
-      zIndex:number
     }
   }
 
@@ -53,11 +52,11 @@ export default class Home extends React.Component {
             styles: ['https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i|Open+Sans:300,300i,400,400i,500,500i,700,700i|Lato:300,300i,400,400i,500,500i,700,700i|Montserrat:300,300i,400,400i,500,500i,700,700i|Oswald:300,300i,400,400i,500,500i,700,700i|Source+Sans+Pro:300,300i,400,400i,500,500i,700,700i|Slabo+27px/13px:300,300i,400,400i,500,500i,700,700i|Raleway:400,400i,700,700i|&subset=latin,latin-ext']
         }
     });
-    this.state = editor;
+    this.setState({editor:editor});
   }
 
   export = () => {
-      const editor:any = this.state;
+      const {editor}:any = this.state;
       editor.runCommand('gjs-export-zip');
   }
 
