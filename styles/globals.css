@@ -1,0 +1,82 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+
+  body {
+    color: white;
+    background: black;
+  }
+}
+
+.gjs-one-bg {
+  background-color: #463a3c
+}
+
+.gjs-one-color {
+  color: #463a3c
+}
+
+.gjs-one-color-h:hover {
+  color: #463a3c
+}
+
+.gjs-two-bg {
+  background-color: #b9a5a6
+}
+
+.gjs-two-color {
+  color: #b9a5a6
+}
+
+.gjs-two-color-h:hover {
+  color: #b9a5a6
+}
+
+.gjs-three-bg {
+  background-color: #804f7b
+}
+
+.gjs-three-color {
+  color: #804f7b
+}
+
+.gjs-three-color-h:hover {
+  color: #804f7b
+}
+
+.gjs-four-bg {
+  background-color: #d97aa6
+}
+
+.gjs-four-color {
+  color: #d97aa6
+}
+
+.gjs-four-color-h:hover {
+  color: #d97aa6
+}
+
+.page_save{
+  position: absolute;
+  top:10px;
+  left:calc(50% - 40px);
+  z-index: 4;
+}
